@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+
+  --alink-color: #ef9ed8;
+  --monosp: monospace;
+
+  --bg-color: #FFD700;
+  --bg-color: #16161d;
+  --border-color: #FFD6A5;
+
+
+  --main-page-title-color: #EED5A0;
+  --main-page-subtitle-color: #eac472;
+
+  --main-page-date-color: #EED5A0;
+
+  --sub-page-date-color: #B64542;
+
+  --h123-color: var(--main-page-text-color);
+
+
+  --bg-color: #1E354F;
+  --bg-color: #131A22;
+  --preview-color: #e8d5c3;
+  --preview-color: #1E354F ;
+  --preview-color: #131A22;
+  --quote-color: #eafbf6;
+  --shadow-color: #f6f4ef;
+  --main-page-date-color: #FFF;
+  
+  --sub-page-title-color: #EED5A0;
+  --main-page-text-color: #FFF;
+}
+
+@layer base {
+
+  @font-face {
+    font-family: '"KurewaGothicCjkTcLight2"';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/KurewaGothicCjkTcLight2.ttf) format('truetype');
+  }
+  
+}
+
+html, body {
+  height: 100%;  
+  background-color: var(--bg-color);
+  /* font-family: 'Georgia'; */
+  
+}
+
+blockquote p {
+  /* color: var(--main-page-text-color); */
+  /* font-style: normal; */
+  quotes: none;
+}
+
+blockquote h1 {color: var(--main-page-text-color);}
+p strong {color: var(--main-page-text-color);}
